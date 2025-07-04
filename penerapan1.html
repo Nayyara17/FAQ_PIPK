@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Penentuan Ruang Lingkup dan Materialitas</title>
+
+  <style>
+    /* ===== Global Body Styling (sama dgn Dashboard) ===== */
+    body {
+      background-color: #f1f3f5;
+      margin: 0;
+      padding: 3rem 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* ===== Kartu konten putih (mirip dashboard-wrapper) ===== */
+    .content-wrapper {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.15);
+      padding: 3rem;
+    }
+
+    /* ===== Heading style (turunan dari Dashboard) ===== */
+    h2.page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      color: #343a40;
+      text-shadow: 0 2px 4px rgba(0,0,0,.1);
+      margin-bottom: 2.5rem;
+      transition: color .3s ease, text-shadow .3s ease;
+    }
+
+    @media (min-width: 768px) {
+      h2.page-title { font-size: 3rem; }
+    }
+
+    h2.page-title:hover,
+    h2.page-title:focus {
+      color: #0d6efd;
+      text-shadow: 0 3px 6px rgba(0,0,0,.15);
+    }
+
+    /* ===== Styling list FAQ agar serasi ===== */
+    .list-group-item {
+      font-size: 1.1rem;
+      padding: 1rem 1.25rem;
+      border: none;
+      border-radius: .75rem;
+      margin-bottom: .75rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,.05);
+      transition: background-color .2s, transform .2s;
+    }
+
+    .list-group-item:hover {
+      background-color: #e9f2ff;
+      transform: translateX(4px);
+    }
+
+    /* ===== Tombol kembali konsisten ===== */
+    .btn-back {
+      min-width: 150px;
+      padding: .75rem 2rem;
+      font-weight: 600;
+    }
+    
+  </style>
+</head>
+<body class="d-flex align-items-center justify-content-center">
+
+  <div class="content-wrapper text-center">
+
+    <!-- Judul Halaman -->
+    <h2 class="page-title">Permasalahan dan Solusi</h2>
+
+    <!-- ========= Daftar pertanyaan & jawaban (Bootstrap 5 Collapse) ========= -->
+<ul class="list-group text-start">
+
+  <!-- Item 1 -->
+  <li class="list-group-item p-0 border-0">
+    <!-- Tombol pertanyaan -->
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="false" aria-controls="q1">
+      Pelaksanaan PIPK pada kebijakan Likuidasi Satker dan Satu DIPA
+      <span class="ms-2">▸</span>
+    </button>
+
+    <!-- Jawaban -->
+    <div id="q1" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        Pada satker yang terdampak likuidasi, akan mengikuti Kementerian pengampu.
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 2 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+      Strategi pengelolaan sumber daya manusia dalam implementasi PIPK
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q2" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        Perlu adanya komitmen dari berbagai pihak, termasuk top manajemen.
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 3 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+      Sosialisasi PIPK yang belum masif
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q3" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        Perlu dilakukan sosialisasi ke seluruh satker kerjasama dengan instansi pembina
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 4 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+      Tim Penerap dan Tim Penilai masih menganggap jika PIPK sebagai formalitas belum substansial
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q4" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        <p>a. Perlu adanya sosialisasi untuk pimpinan dari Kemenkeu terkait pentingnya PIPK</p>
+        <p>b. Perlu adanya reward and punishment dari Kemenkeu</p>
+        <p>c. Indikatotor Kinerja tambahan</p>
+        <p>d. Dorongan dari APIP</p>
+
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 5 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+      Kurangnya komitmen pimpinan atas pelaksanaan Penilaian PIPK dan masih terdapat perangkapan fungsi antara penerap dengan penilai PIPK
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q5" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        <p>1. Laksanakan kegiatan besar seperti Kick Off Meeting PIPK misalnya dengan menghadirkan petinggi yang berpengaruh di KL nya</p>
+        <p>2. Reward dari Kemenkeu atas Pelaksanaan PIPK bagi K/L dan Satker</p>
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 6 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+      Komitmen dan perhatian pimpinan pada PIPK masih kurang, jika perlu dibuat kebijakan mandatory atas hasil penilaian PIPK menjadi bagian tidak terpisahkan dalam LK
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q6" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        -
+      </div>
+    </div>
+  </li>
+
+   <!-- Item 7 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
+      Sosialisasi untuk tim penerap / tim penilai PIPK belum sepenuhnya optimal di K/L terlebih satker
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q7" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        -
+    </div>
+  </li>
+
+   <!-- Item 8 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
+      Pemahaman terkait Penerapan PIPK sepertinya belum sampai pada pengelola keuangan, dan masih dianggap merupakan pekerjaan para penyusun LK
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q8" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        -
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 9 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q9" aria-expanded="false" aria-controls="q9">
+      Strategi pengelolaan sumber daya manusia dalam implementasi PIPK masih belum optimal 
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q9" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        -
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 10 -->
+  <li class="list-group-item p-0 border-0">
+    <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse" data-bs-target="#q10" aria-expanded="false" aria-controls="q10">
+      Perlu dilakukan refreshment/sosialisasi PIPK internal KL (SOP/Juknis/Kebijakan internal)
+      <span class="ms-2">▸</span>
+    </button>
+    <div id="q10" class="collapse">
+      <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+        -
+      </div>
+    </div>
+  </li>
+
+  <!-- Item 11 -->
+<li class="list-group-item p-0 border-0">
+  <!-- Tombol pertanyaan -->
+  <button class="list-group-item list-group-item-action fw-bold d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" data-bs-target="#q11" aria-expanded="false" aria-controls="q11">
+    Pelaksanaan PIPK pada kebijakan Likuidasi Satker dan Satu DIPA
+    <span class="ms-2">▸</span>
+  </button>
+
+  <!-- Jawaban -->
+  <div id="q11" class="collapse">
+    <div class="px-4 py-3 bg-light border-start border-4 border-primary rounded-bottom">
+      <p>Pada satker yang terdampak likuidasi, akan mengikuti Kementerian pengampu.</p>
+
+      <!-- Tombol untuk membuka modal video -->
+      <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#videoModal">
+        🎥 Lihat Video Penjelasan
+      </button>
+    </div>
+  </div>
+</li>
+
+<!-- Modal Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Video Penjelasan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/LV1Es22E0RI" title="Video YouTube"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</ul>
+<!-- ===================================================================== -->
+
+
+    <!-- Tombol kembali -->
+    <div class="mt-4">
+      <a href="penerapan.html" class="btn btn-secondary btn-back">← Kembali</a>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
